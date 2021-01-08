@@ -4,7 +4,6 @@ body{
 
 html{
     scroll-behavior: smooth;
-    overflow-y: scroll;
 }
 
 #navsite{
@@ -72,10 +71,6 @@ img{
     animation: wheel 50s infinite linear;
 }
 
-#aboutMe{
-    scroll-snap-stop: always;
-}
-
 #projects{
     padding-top: 400px;
 }
@@ -85,8 +80,26 @@ img{
     margin: 0 auto; 
 }
 span{
-    border-bottom: 2px solid orange; 
+    border-bottom: 2px dotted orange; 
 }
+
+#gridProj{
+    display: grid;
+    grid-gap: 225px;
+    grid-template-columns: 175px 175px 175px;
+    grid-template-rows: 175px 175px 175px;
+    padding: 10px;
+    padding-left: 95px;
+    text-align: center;
+}
+
+.gridLink{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+}
+
 @keyframes wheel{
     from{
         transform: rotate(0deg);
