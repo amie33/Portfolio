@@ -1,5 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: rgb(112, 13, 179);
+    padding: 20px; 
 }
 
 html{
@@ -64,7 +68,7 @@ h2{
     position: relative;
     padding-bottom: 355px;
 }
-img{
+#selfie{
     border-radius: 50%;
 }
 #selfie{
@@ -82,22 +86,29 @@ img{
 span{
     border-bottom: 2px dotted orange; 
 }
-
-#gridProj{
-    display: grid;
-    grid-gap: 225px;
-    grid-template-columns: 175px 175px 175px;
-    grid-template-rows: 175px 175px 175px;
-    padding: 10px;
-    padding-left: 95px;
-    text-align: center;
+.row{
+    margin: 8px; 
 }
 
-.gridLink{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
+.row, .row > .column{
+    padding: 8px; 
+}
+.column{
+    float: left; 
+    width: 25%;
+}
+.row:after{
+    content: "";
+    display: table; 
+    clear: both;
+}
+.content{
+    background-color: aquamarine;
+    padding: 10px;
+}
+.pic{
+    height: 100px; 
+    width: 100px;    
 }
 
 @keyframes wheel{
