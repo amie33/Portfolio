@@ -6,7 +6,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     </head> 
     <body>
-    <div class='preloader' id='preloader'></div>
+    <div class='preloader' id='preloader'>
+        <div class='a'><marquee width="100%" direction="left" height="100px" scrollamount='13'>
+           <p> Collecting my thoughts..might take a moment... </p>
+        </marquee>
+        </div>
+    </div>
         <div class='wrapperAll' id='wrapperAll'>
             <nav id="navsite">
                 <ul> 
@@ -178,7 +183,7 @@
     <script> 
         window.onload = function() {
             document.body.scrollTop = document.documentElement.scrollTop = 0;
-            var loadMe = setTimeout(showPage, 3000);
+            var loadMe = setTimeout(showPage, 9000);
         };
         function showPage(){
             document.getElementById('preloader').style.display = 'none';

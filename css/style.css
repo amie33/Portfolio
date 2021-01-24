@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .preloader{
-    background-color: rgb(233, 223, 223);
+    background: black url('../img/bubblegum2.gif') no-repeat center center;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -12,7 +12,14 @@
 #wrapperAll{
     display: none;
 }
-
+.a{
+    color: red; 
+}
+p{
+    font-size: 50px;
+    color: white; 
+    font-family: 'Amatic SC', cursive;
+}
 body{
     background-image: url('../img/Nightofthelivingdead.jpg');
     background-position: center center;
