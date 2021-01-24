@@ -87,35 +87,28 @@ span{
     border-bottom: 2px dotted orange; 
 }
 
-/*Structure for the layout of my projects*/
-.row{
-    margin: 8px; 
-}
-
-.row, .row > .column{
-    padding: 8px; /*creates the padding between columns*/
-}
-
-.column{
-    float: left; 
-    width: 25%;
-    position: relative;
-}
-.row:after{
-    content: "";
-    display: table; 
-    clear: both;
-}
-.content{
-    background-color: aquamarine;
-    padding: 7px 2px 2px 2px;
-}
+/*structure for the grid layout of projects */ 
 .pic{
     height: 150px; 
     width: 240px;    
     text-align: center; 
 }
-.overlay {
+.row{
+    display: grid;
+    grid-gap: 50px 100px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    text-align: center;
+}
+.column{
+    text-align: center;
+}
+.content{
+    position: relative;
+    width: 100%;
+}
+.overlay{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -125,14 +118,13 @@ span{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #f1f51d;
-    padding: 2px 15px 2px 15px; 
-    text-align: left; 
+    background-color: #008CBA;
 }
-.content:hover .overlay {
-    opacity: 1;
+.content:hover .overlay{
+    opacity: 1; 
 }
-/*Makes my picture rotate*/
+
+/*Animations*/ 
 @keyframes wheel{
     from{
         transform: rotate(0deg);
@@ -141,3 +133,4 @@ span{
         transform: rotate(359deg);
     }
 }
+
