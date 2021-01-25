@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html> 
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="js/script.js"></script>
         <title>Amie's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
@@ -8,15 +10,14 @@
     <body>
     <div class='preloader' id='preloader'>
         <div class='a'><marquee width="100%" direction="left" height="100px" scrollamount='13'>
-           <p> Collecting my thoughts..might take a moment... </p>
+           <p class='dance'> Collecting my thoughts..might take a moment... </p>
         </marquee>
         </div>
     </div>
         <div class='wrapperAll' id='wrapperAll'>
             <nav id="navsite">
                 <ul> 
-                    <div class='name'><li id='name'>Amie N. Jensen</li></div>
-                    <li><a href="#myHead">Home</a></li>
+                    <div class='name'><li id='name'><a href="#myHead">Amie N. Jensen</a></li></div>
                     <li><a href="#myMain">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#resume"></a>Resume</li> 
@@ -180,15 +181,4 @@
             </main> 
         </div> 
     </body>   
-    <script> 
-        window.onload = function() {
-            document.body.scrollTop = document.documentElement.scrollTop = 0;
-            var loadMe = setTimeout(showPage, 9000);
-        };
-        function showPage(){
-            document.getElementById('preloader').style.display = 'none';
-            document.getElementById('wrapperAll').style.display = 'block';
-        }
-    </script>
-    <script src="js/script.js"></script>
 </html>
