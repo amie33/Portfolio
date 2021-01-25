@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#preloader").fadeOut(15000);
+    $("#preloader").fadeOut(8000);
     $("#wrapperAll").fadeIn(11000);
 })
 
