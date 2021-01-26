@@ -11,6 +11,7 @@
 }
 #wrapperAll{
     display: none; 
+    position: absolute;
 }
 
 .a{
@@ -165,7 +166,13 @@ span{
 }
 
 h2{
-    padding: 20px; 
+    padding: 30px; 
+}
+
+img{
+    height: 270px; 
+    width: 270px; 
+
 }
 /*Animations*/ 
 @keyframes wheel{

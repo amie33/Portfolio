@@ -1,6 +1,9 @@
 $(document).ready(function(){
-    $("#preloader").fadeOut(8000);
-    $("#wrapperAll").fadeIn(11000);
+    $("#preloader").fadeToggle(15000, function(){
+        //$("#wrapperAll").css("display", "block");
+        $("#wrapperAll").fadeIn(1000);  
+    });
+    
 })
 
 window.onload = function() {
