@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin: 0; 
 }
 .preloader{
     background: black url('../img/bubblegum2.gif') no-repeat center center;
@@ -9,10 +10,29 @@
     left: 0; 
     top: 0;  
 }
+
 #wrapperAll{
     display: none; 
     position: absolute;
 }
+
+header{
+    background: black url('../img/stars.png') repeat top center; 
+    background-size: 100% 100%;
+    animation: orbit 500s linear infinite; 
+}
+
+@keyframes orbit{
+    from{background-position: 0 0;}
+    to{background-position: -20000px 5000px;}
+}
+
+/* @keyframes twinkle-twinkle{
+    100% {opacity: 1;}
+    75%{opacity: .75;}
+    50%{opacity: 1}
+    25%{opacity: .75}
+} */
 
 .a{
     top: 50%;
@@ -29,13 +49,9 @@
     font-family: 'Amatic SC', cursive;
 }
 
-body{
-    
-    background-color: #6708d4;
-}
-
 html{
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 #navsite{
