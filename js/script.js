@@ -1,8 +1,11 @@
 $(document).ready(function(){
-    $("#preloader").fadeToggle(15000, function(){
-        //$("#wrapperAll").css("display", "block");
-        $("#wrapperAll").fadeIn(1000);  
-    });
+    // $("#preloader").fadeToggle(15000, function(){
+    //     //$("#wrapperAll").css("display", "block");
+    //     $("#wrapperAll").fadeIn(1000);  
+    // });
+    $("#preloader").fadeOut(9999, function(){
+        $("#wrapperAll").fadeIn(500); 
+    })
     
 })
 
