@@ -7,18 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
 </head>
-    <div class='wrapperAll' id='wrapperAll'>
-        <nav id="navsite">
+<body>
+    <main id="swup" class="transition-fade">
+        <div class='proj-div'>
+            <nav id="navsite">
             <ul> 
-                <div class='name'><li id='name'><a href="index.html">Amie N. Jensen</a></li></div>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html"></a>Resume</li> 
+                <div class="name"  ><li id='name'><a href="/index.html">Amie N. Jensen</a></li></div>
+                <li><a class="transition-fade" href="/about.html">About</a></li>
+                <li><a class="transition-fade" href="/projects.html">Projects</a></li>
+                <li><a class="transition-fade" href="/resume.html"></a>Resume</li> 
             </ul>
-        </nav>
-    </div>
-    <body>
-        <div id='container' name='proj' class='projcontain'>
+            </nav>
+        
+        <div id='container-proj' name='proj' class='projcontain'>
             <h1 id="projects"><span>Projects</span></h1>
             <!--Temporatry Structure for my project layout-->
             <div class='row'>
@@ -155,12 +156,15 @@
                     </div>
                 </div>
             </div>
-            <!--End of the row div--> 
-        </div>
-    </div>
-    <script src="node_modules/swup/dist/swup.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-    <script> const swup = new Swup();</script>
+        <!--End of the row div--> 
+        </main>
+</div>
+<script src="node_modules/swup/dist/swup.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script> 
+    let options = {LINK_SELECTOR: 'a',debugMode: true,}; 
+    const swup = new Swup(options);
+</script>
 </body>
 </html>

@@ -7,18 +7,18 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 </head>
-    <div class='wrapperAll' id='wrapperAll'>
+<body>
+    <div>
         <nav id="navsite">
             <ul> 
-                <div class='name'><li id='name'><a href="index.html">Amie N. Jensen</a></li></div>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html"></a>Resume</li> 
-            </ul>
+                <div class="name" ><li id='name'><a href="/index.html">Amie N. Jensen</a></li></div>
+                <li><a class="transition-fade" href="/about.html">About</a></li>
+                <li><a class="transition-fade" href="/projects.html">Projects</a></li>
+                <li><a class="transition-fade" href="/resume.html"></a>Resume</li> 
+            </ul
         </nav>
     </div>
-    <body>
-        <main id='myMain'>
+        <main>
             <div id='container'>
                 <h1 id="aboutMe"><span>About Me</span></h1>
                 <div class='me'>
@@ -30,8 +30,11 @@
             </div>
         </main>
         <script src="node_modules/swup/dist/swup.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/script.js"></script>
-        <script> const swup = new Swup();</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script> 
+        let options = {LINK_SELECTOR: 'a',debugMode: true,};
+        const swup = new Swup(options);
+    </script>
     </body>
 </html>

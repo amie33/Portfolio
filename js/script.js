@@ -3,8 +3,8 @@
  * function to create the preloader page
  */
 $(document).ready(function(){
-    $("#preloader").fadeOut(100, function(){
-        $("#wrapperAll").fadeIn(200); 
+    $("#preloader").fadeOut(10, function(){
+        $("#wrapperAll").fadeIn(500); 
     })
     
 })
