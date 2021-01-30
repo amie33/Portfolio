@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "swup": "^2.0.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "Standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amie33/Portfolio.git"
+  },
+  "author": "Amie Jensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amie33/Portfolio/issues"
+  },
+  "homepage": "https://github.com/amie33/Portfolio#readme"
+}

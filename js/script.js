@@ -1,8 +1,9 @@
+//alert('test');
 /**
  * function to create the preloader page
  */
 $(document).ready(function(){
-    $("#preloader").fadeOut(9000, function(){
+    $("#preloader").fadeOut(100, function(){
         $("#wrapperAll").fadeIn(200); 
     })
     
