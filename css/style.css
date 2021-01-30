@@ -11,28 +11,16 @@
     top: 0;  
 }
 
-#wrapperAll{
-    display: none; 
-    position: absolute;
-}
-
-header{
-    background: black url('../img/stars.png') repeat top center; 
-    background-size: 100% 100%;
+html{
+    background-image: url('../img/stars.png');
+    background-color: black; /* Used if the image is unavailable */
+    height: 690px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    text-align: center;
     animation: orbit 500s linear infinite; 
 }
-
-@keyframes orbit{
-    from{background-position: 0 0;}
-    to{background-position: -20000px 5000px;}
-}
-
-/* @keyframes twinkle-twinkle{
-    100% {opacity: 1;}
-    75%{opacity: .75;}
-    50%{opacity: 1}
-    25%{opacity: .75}
-} */
 
 .a{
     top: 50%;
@@ -115,11 +103,15 @@ h2{
     color: white; 
 }
 
-#container{
-    text-align: center;
-    position: relative;
-    padding-bottom: 355px;
+h2{
+    margin: 50px; 
 }
+
+img{
+    height: 270px; 
+    width: 270px; 
+}
+
 #selfie{
     border-radius: 50%;
 }
@@ -181,15 +173,6 @@ span{
     padding-left: 2px; 
 }
 
-h2{
-    padding: 30px; 
-}
-
-img{
-    height: 270px; 
-    width: 270px; 
-
-}
 /*Animations*/ 
 @keyframes wheel{
     from{
@@ -200,3 +183,7 @@ img{
     }
 }
 
+@keyframes orbit{
+    from{background-position: 0 0;}
+    to{background-position: -20000px 5000px;}
+}
