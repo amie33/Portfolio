@@ -4,6 +4,7 @@
   "description": "My personal portfolio",
   "main": "index.js",
   "dependencies": {
+    "js-cookie": "^2.2.1",
     "swup": "^2.0.14"
   },
   "devDependencies": {},
