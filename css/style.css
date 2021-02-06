@@ -238,13 +238,18 @@ html.is-animating .transition-fade{
 }
 
 .fa-linkedin {
-background: #007bb5;
-color: white;
+    background: #007bb5;
+    color: white;
 }
 
 .fa-instagram {
-background: linear-gradient(to bottom right, red,orange, blue,violet);
-color: white;
+    background: linear-gradient(to bottom right, red,orange, blue,violet);
+    color: white;
+}
+
+.fa-github{
+    background: rgb(3, 146, 79);
+    color: black;
 }
 
 @keyframes bouncy{
