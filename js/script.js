@@ -11,7 +11,7 @@ jQuery(window).on('load', function(){
     jQuery('#wrapperAll').hide();
     if (sessionStorage.getItem('dontLoad') == null)
     {
-        jQuery("#preloader").fadeOut(10000, function(){
+        jQuery("#preloader").fadeOut(1, function(){
             $('#wrapperAll').fadeIn(500);
             
         });
