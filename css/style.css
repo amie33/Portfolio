@@ -125,19 +125,16 @@ img{
 #projects{
     margin: 150px;
 }
-/* .me{
-    border: 2px solid orange; 
-    width: 50%;
-    margin: 0 auto; 
-    transition: snake .25s;
-} */
+
 .me{
     --borderWidth: 3px;
-    background: #1D1F20;
+    background: #000000;
     position: relative;
     border-radius: var(--borderWidth);
     width: 50%;
-    margin: 0 auto; 
+    margin-right: 50px;
+    float: right;
+  
 }
 .me:after{
     content: '';
@@ -146,7 +143,7 @@ img{
     left: calc(-1 * var(--borderWidth));
     height: calc(100% + var(--borderWidth) * 2);
     width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background: linear-gradient(60deg, #e909c3, #ec0707, #e27208fa, #aba666, #50b85e, #1098ad, #07b39b, #0615e6);
     border-radius: calc(2 * var(--borderWidth));
     z-index: -1;
     animation: animatedgradient 3s ease alternate infinite;
@@ -166,13 +163,30 @@ img{
 .me-p{
     color: white; 
     font-family: 'Amatic SC', cursive;
-    font-size: 30px;
-
+    font-size: 25px;
 }
-span{
-    border-bottom: 2px dotted orange; 
+.drawing{
+    width: 500px;
+    height: 400px;
+    transform: rotate(-30deg);
+    position: absolute; 
+    top: -38px;
+    left: 7px;
+    z-index: 2;
 }
-
+.trees{
+    height: 500px; 
+    position: absolute;
+    z-index: 1;
+    left: 450px;
+}
+.ice{
+    position: absolute;
+    z-index: 1;
+    height: 500px;
+    left: 194px;
+    top: 273px; 
+}
 /*structure for the grid layout of projects */ 
 .pic{
     height: 150px; 
