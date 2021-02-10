@@ -21,6 +21,12 @@ html{
     text-align: center;
     animation: orbit 500s linear infinite; 
 }
+/* 
+.about{
+    background: url('../img/escalante.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5;
+} */
 
 .a{
     top: 50%;
@@ -35,11 +41,6 @@ html{
     font-size: 50px;
     color: white; 
     font-family: 'Amatic SC', cursive;
-}
-
-html{
-    scroll-behavior: smooth;
-    background-color: black;
 }
 
 #navsite{
@@ -124,14 +125,49 @@ img{
 #projects{
     margin: 150px;
 }
-.me{
+/* .me{
     border: 2px solid orange; 
     width: 50%;
     margin: 0 auto; 
+    transition: snake .25s;
+} */
+.me{
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+    width: 50%;
+    margin: 0 auto; 
 }
-p{
+.me:after{
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+@keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.me-p{
     color: white; 
     font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+
 }
 span{
     border-bottom: 2px dotted orange; 
@@ -252,9 +288,3 @@ html.is-animating .transition-fade{
     color: black;
 }
 
-@keyframes bouncy{
-    /* 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-    40% {transform: translateY(-30px);} 
-    60% {transform: translateY(-15px);}  */ 
-
-}
