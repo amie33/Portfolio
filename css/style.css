@@ -165,28 +165,7 @@ img{
     font-family: 'Amatic SC', cursive;
     font-size: 25px;
 }
-.drawing{
-    width: 500px;
-    height: 400px;
-    transform: rotate(-30deg);
-    position: absolute; 
-    top: -38px;
-    left: 7px;
-    z-index: 2;
-}
-.trees{
-    height: 500px; 
-    position: absolute;
-    z-index: 1;
-    left: 450px;
-}
-.ice{
-    position: absolute;
-    z-index: 1;
-    height: 500px;
-    left: 194px;
-    top: 273px; 
-}
+
 /*structure for the grid layout of projects */ 
 .pic{
     height: 150px; 
@@ -302,3 +281,44 @@ html.is-animating .transition-fade{
     color: black;
 }
 
+#aboutMe {   
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+    margin-left: 30px; 
+    margin-top: 5px; 
+} 
+  
+@keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 15px); } 
+    100%   { transform: translate(0, -0px); }     
+} 
+
+.marsAttacks{
+     height: 600px; 
+     width: 800px; 
+     position: relative; 
+     left: -170px; 
+}
+.alien{
+    width: 15%;
+    float: left; 
+}
+
+.line{
+    stroke:limegreen;
+    stroke-width:2;
+    position: relative;
+    stroke-dasharray: 20;
+    animation: shoot 7s linear;
+}
+svg{
+    transform: translate(-470px, 38px);
+}
+@keyframes shoot{
+    to{
+        stroke-dashoffset: 200;
+    }
+}
